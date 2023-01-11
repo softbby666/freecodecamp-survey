@@ -1,92 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
- </head>
- <body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="header">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description"><i>Thank you for taking the time to help us to improve the platform</i></p>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        <i>Thank you for taking the time to help us to improve the platform</i>
+      </p>
     </header>
 
     <form id="survey-form">
-       <section id="contactData"> 
+      <section id="contactData">
         <label id="name-label" for="name">Name</label>
-        <input class="box" type="text" id="name" name="name" placeholder="Type your name" required>
-        <br><br>
+        <input
+          class="box"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Type your name"
+          required
+        />
+        <br /><br />
         <label id="email-label" for="email">Email</label>
-        <input class="box" type="email" id="email" name="email" placeholder="Type your email" required>
-        <br><br>
+        <input
+          class="box"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Type your email"
+          required
+        />
+        <br /><br />
         <label id="number-label" for="">Age (optional)</label>
-        <input class="box" type="number" id="number" name="age" min="11" max="120" placeholder="Age">
-        <br><br>
-       </section>
+        <input
+          class="box"
+          type="number"
+          id="number"
+          name="age"
+          min="11"
+          max="120"
+          placeholder="Age"
+        />
+        <br /><br />
+      </section>
 
-    <section id="cv">
+      <section id="cv">
         <p>Which option best describes your current role?</p>
-         <select id="dropdown">
-            <option value="name">Elige una opción</option>
-            <option value="student">Student</option>
-            <option value="manager">Manager</option>
-            <option value="ceo">CEO</option>
-         </select><br><br>
+        <select id="dropdown">
+          <option value="name">Elige una opción</option>
+          <option value="student">Student</option>
+          <option value="manager">Manager</option>
+          <option value="ceo">CEO</option></select
+        ><br /><br />
 
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <input type="radio" id="yes" name="recommend" value="yes" class="check-input">
-        <label for="yes">Yes</label><br>
-        <input type="radio" id="no" name="recommend" value="no" class="check-input">
-        <label for="no">No</label><br>
-        <input type="radio" id="maybe" name="recommend" value="maybe" class="check-input">
-        <label for="maybe">Maybe</label><br><br>
+        <input
+          type="radio"
+          id="yes"
+          name="recommend"
+          value="yes"
+          class="check-input"
+        />
+        <label for="yes">Yes</label><br />
+        <input
+          type="radio"
+          id="no"
+          name="recommend"
+          value="no"
+          class="check-input"
+        />
+        <label for="no">No</label><br />
+        <input
+          type="radio"
+          id="maybe"
+          name="recommend"
+          value="maybe"
+          class="check-input"
+        />
+        <label for="maybe">Maybe</label><br /><br />
 
         <p>Which is your favorite font?</p>
         <select name="favourite-feature" id="dropdown">
-            <option value="challenges">Challenges</option>
-            <option value="Community">Community</option>
-            <option value="open-source">Open Source</option>
-        </select><br><br>
-    </section>
-
-    <section>
+          <option value="challenges">Challenges</option>
+          <option value="Community">Community</option>
+          <option value="open-source">Open Source</option></select
+        ><br /><br />
+      </section>
+      <section>
         <p>Wich software do know how to you use? (Check all that apply)</p>
-        <input type="checkbox" class="check-input" id="affinityDesign">
+        <input type="checkbox" class="check-input" id="affinityDesign" />
         <label>AffinityDesign</label>
-        <input type="checkbox" class="check-input" id="procreate">
+        <input type="checkbox" class="check-input" id="procreate" />
         <label>Procreate</label>
-        <input type="checkbox" class="check-input" id="inDesign">
+        <input type="checkbox" class="check-input" id="inDesign" />
         <label>InDesign</label>
-        <input type="checkbox" class="check-input" id="illustrator">
+        <input type="checkbox" class="check-input" id="illustrator" />
         <label>Illustrator</label>
-        <input type="checkbox" class="check-input" id="photoshop">
-        <label>Photoshop</label><br>
-        <input type="checkbox" class="check-input" id="krita">
+        <input type="checkbox" class="check-input" id="photoshop" />
+        <label>Photoshop</label><br />
+        <input type="checkbox" class="check-input" id="krita" />
         <label>Krita</label>
-        <input type="checkbox" class="check-input" id="affinityPhoto">
+        <input type="checkbox" class="check-input" id="affinityPhoto" />
         <label>Affinity Photo</label>
-        <input type="checkbox" class="check-input" id="concepts">
+        <input type="checkbox" class="check-input" id="concepts" />
         <label>Concepts</label>
-        <input type="checkbox" class="check-input" id="figma">
+        <input type="checkbox" class="check-input" id="figma" />
         <label>Figma</label>
-        <input type="checkbox" class="check-input" id="canva">
+        <input type="checkbox" class="check-input" id="canva" />
         <label>Canva</label>
-        <input type="checkbox" class="check-input" id="afterEffects">
-        <label>After Effects</label> <br><br>
-        
-        <p>Make a color palette for a skin care brand)</p>
-        <input type="color" class="check-input" id="affinityDesign">
-        <input type="color" class="check-input" id="affinityDesign">
-        <input type="color" class="check-input" id="affinityDesign">
-        <input type="color" class="check-input" id="affinityDesign">
-        <input type="color" class="check-input" id="affinityDesign">
-    <section id="feedback">
-        <br><br><label for="comments">Leave a comment</label><br>
-        <textarea placeholder="Enter your comments here"></textarea><br><br>
-    </section>
-        <button type="submit" id="submit">Submit</button>
-      </form>
- </body>
+        <input type="checkbox" class="check-input" id="afterEffects" />
+        <label>After Effects</label> <br /><br />
+
+        <p>Make a warm palette</p>
+        <input type="color" class="color-input" id="color1" />
+        <input type="color" class="color-input" id="color2" />
+        <input type="color" class="color-input" id="color3" />
+        <input type="color" class="color-input" id="color4" />
+        <input type="color" class="color-input" id="color5" />
+        <p>Make an analogous color scheme</p>
+        <input type="color" class="color-input" id="color6" />
+        <input type="color" class="color-input" id="color7" />
+        <input type="color" class="color-input" id="color8" />
+        <input type="color" class="color-input" id="color9" />
+        <input type="color" class="color-input" id="color10" />
+      </section>
+
+      <section id="feedback">
+        <br /><br /><label for="comments">Leave a comment</label><br />
+        <textarea placeholder="Enter your comments here"></textarea><br /><br />
+      </section>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
 </html>

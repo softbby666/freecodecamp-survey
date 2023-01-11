@@ -76,3 +76,8 @@ input.check-input {
   width: 20px;
   height: 20px;
 }
+.color-input {
+  border-radius: 5px;
+  width: 55px;
+  height: 55px;
+}
